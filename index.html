@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="click">Click me!</button>
+    <p id="text">0</p>
+
+    <input type="text" name="" id="inp1" />
+    <input type="text" name="" id="inp2" />
+    <button id="add">+</button>
+    <button id="sub">-</button>
+    <button id="mul">*</button>
+    <button id="div">/</button>
+    <div id="result">0</div>
+    <script>
+
+      
+      let count = 0;
+      function Increase() {
+        count++;
+        document.getElementById("text").innerText = count;
+      }
+      document.getElementById("click").addEventListener("click", Increase);
+
+      function Addition() {
+        document.getElementById("result").innerText =
+          parseInt(document.getElementById("inp1").value) +
+          parseInt(document.getElementById("inp2").value);
+      }
+      function Subtraction() {
+        document.getElementById("result").innerText =
+          parseInt(document.getElementById("inp1").value) -
+          parseInt(document.getElementById("inp2").value);
+      }
+      function Multiplication() {
+        document.getElementById("result").innerText =
+          parseInt(document.getElementById("inp1").value) *
+          parseInt(document.getElementById("inp2").value);
+      }
+      function Divide() {
+        document.getElementById("result").innerText =
+          parseInt(document.getElementById("inp1").value) /
+          parseInt(document.getElementById("inp2").value);
+      }
+      document.getElementById("add").addEventListener("click", Addition);
+      document.getElementById("sub").addEventListener("click", Subtraction);
+      document.getElementById("mul").addEventListener("click", Multiplication);
+      document.getElementById("div").addEventListener("click", Divide);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

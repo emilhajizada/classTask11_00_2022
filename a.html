@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Increase</button>
+    <button id="btn1">decrease</button>
+    <button id="btn2">0</button>
+    <input type="text" id="inp" value="1" />
+    <script>
+      let count = 0;
+    //   artir
+      document.getElementById("btn").addEventListener("click", function () {
+        document.getElementById("btn2").innerHTML = count += parseInt(document.getElementById("inp").value);
+      });
+    //   azalt
+      document.getElementById("btn1").addEventListener("click", function () {
+        document.getElementById("btn2").innerHTML = count -= parseInt(document.getElementById("inp").value);
+      });
+    </script>
+  </body>
+</html>
